@@ -1,0 +1,21 @@
+body
+{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+.container
+{
+	
+}
+
+.kontakt
+{
+    color:rgb(255, 0, 0);
+    position: absolute; right: 25px;
+}
+
+.kategoria
+{
+    color:salmon
+}

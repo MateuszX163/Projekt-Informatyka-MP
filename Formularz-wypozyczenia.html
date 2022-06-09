@@ -1,0 +1,62 @@
+<!--Domyslny URL: https://www.bielsko.zdz.katowice.pl/pozyczone-rzeczy/komputery-i-laptopy/komputery/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl podstrona —rzecz.css" type="text/css" />
+    <link rel="icon" href="ikona.png">
+</head>
+<header>
+    <center>
+		<h1>ZDZ Bielsko Katowice-Rzeczy wypozyczone rzeczy</h1>
+		<h2>Formularz wypozyczenia</h2>
+		<br>
+        <button href="index.html"><img src="icon.png" alt="ZDZ" width="132vh" height="85vh"></button>
+	</center>
+	<p>Kliknij logo aby wrocic na glowna stronę</p>
+	<br><br><br>
+	<div class="Form">
+	<form action="rekord.php" method="POST">
+		<input type="text" name="imie" placeholder="Podaj imie" required />
+		<p>Podaj swoje imie</p><br>
+		<input type="text" name="nazwisko" placeholder="Podaj nazwisko" required />
+		<p>Podaj swoje nazwisko</p><br>
+		<input type="text" name="id" placeholder="Podaj ID rzeczy"/>
+		<p>Jesli nie znasz ID, zeskanuj kod QR na przedmiocie</p><br>
+		<input type="text" name="data_wypozyczenia" placeholder="Podaj aktualną datę" required />
+		<p>datę nalezy podać w formacie YYYY-MM-DD HH:MM:SS</p>
+		<p>Y-Rok M-Miesiac D-Dzien H-Godzina M-Miesiac S-Second</p><br>
+		<p>np. 2077-12-31 21:37:00</p>
+		<input type="text" name="data_oddania" placeholder="Podaj datę zwrocenia" required />
+		<p>datę nalezy podać w formacie YYYY-MM-DD HH:MM:SS</p>
+		<p>Y-Rok M-Miesiac D-Dzien H-Godzina M-Miesiac S-Second</p><br>
+		<input type="text" name="nazwa_rzeczy" placeholder="Podaj nazwe rzeczy" required />
+		<p>Podaj nazwę rzeczy, np. "Komputer", "Router"</p><br>
+		<br>
+		<input type="text" name="klasa" placeholder="Podaj klase np. 2" />
+		<p>Jesli jesteś nauczycielem wpisz "Nauczyciel"</p><br>
+		<input type="text" name="kierunek" placeholder="Podaj kierunek np. Technik informatyk" />
+		<p>Jesli jesteś nauczycielem wpisz "Nauczyciel"</p><br>
+		<button type="submit">Zatwierdź</button>
+	</form>
+	</div>
+</header>
+<body>
+</body>
+</html>
+
+
+
+<!--
+$FirstName = $_POST['imie']
+$SecondName = $_POST['nazwisko']
+$ID = $_POST['ID']
+$Date = $_POST['Data_wypozyczenia']
+$SecondDate = $_POST['Data_oddania']
+$ItemName = $_POST['Nazwa rzeczy']
+$ClassNumber = $_POST['klasa']
+$FieldOfStudy = $_POST['kieurnek']
+-->
